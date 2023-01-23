@@ -1,0 +1,126 @@
+.main{
+  &-wrapper{
+    //background-color: $body-bg;
+  }
+  &-content{
+    &-layer{
+
+    }
+  }
+}
+
+
+.list{
+  margin:0;
+  padding:0;
+
+  &-group{
+    margin:0;
+    padding:0;
+    list-style: none;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    background-color: #fff;
+    &-item{
+      padding:15px 15px;
+      border-bottom: 1px solid #f2f2f2;
+    }
+  }
+
+  &-inline{
+    list-style: none;
+    &-item{
+      display: inline-block;
+      &:not(:last-child){
+        margin-right:.5rem;
+      }
+    }
+  }
+}
+
+$social-icon-width: 40px;
+.social{
+  &-icon{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: $social-icon-width;
+    height: $social-icon-width;
+    background-color: $blue;
+    //border-radius: 0.2rem;
+    img{
+      max-height: 50%;
+      max-width: 50%;
+      object-fit: contain;
+    }
+
+    &:hover{
+      box-shadow: $box-shadow;
+      transform:translateY(-1px);
+    }
+  }
+  &-twitter{
+    background-color: #03A9F4;
+  }
+  &-instagram{
+    background-color: #6f42c1;
+  }
+  &-linkedin{
+    background-color: #0077B5;
+  }
+}
+
+.widget{
+  &-title{
+    padding-left:15px;
+    border-left:4px solid $blue;
+  }
+}
+
+.divider-1{
+  position: relative;
+  .divider-text{
+    position: relative;
+    background-color: #fff;
+    padding:0 1rem;
+    z-index: 99;
+  }
+  &:after{
+    content: "";
+    width: 90%;
+    left: 15px;
+    right: 15px;
+    top: -13px;
+    background-color: #ddd;
+    height: 1px;
+    display: block;
+    position: relative;
+  }
+}
+
+
+.campaign{
+  &-head{
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    &.with-cover{
+      &:after{
+        content:'';
+        display: block;
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-color: rgba(0, 0, 0, 0.45);
+      }
+      .campaign-title{
+        color:#fff;
+      }
+    }
+  }
+
+  &-body{
+    margin-top:$banner-space-management*2;
+  }
+}

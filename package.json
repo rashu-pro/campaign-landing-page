@@ -1,0 +1,28 @@
+{
+  "name": "campaign-landing-page",
+  "version": "1.0.0",
+  "description": "a landing page for campaign such as fundraising campaign",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass:assets/css -w"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rashu-pro/campaign-landing-page.git"
+  },
+  "keywords": [
+    "landing",
+    "page",
+    "page",
+    "campaign"
+  ],
+  "author": "rashu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rashu-pro/campaign-landing-page/issues"
+  },
+  "homepage": "https://github.com/rashu-pro/campaign-landing-page#readme"
+}

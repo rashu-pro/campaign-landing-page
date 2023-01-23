@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Campaign Landing Page</title>
 
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=1.0.0">
 </head>
 <body>
 <div class="main">
@@ -20,9 +20,9 @@
                alt="company">
         </a>
 
-        <div>
+        <div class="logo-credit">
           <img src="https://res.cloudinary.com/secure-api/image/upload/v1665995024/secure-api/Secure-api/content/images/bsyzbmzysh1fjgieix2v.png"
-               class="img-fluid img-fluid"
+               class="img-fluid"
                alt="Masjid Solutions">
         </div>
       </div>
@@ -31,9 +31,10 @@
   </header>
 
   <div class="main-wrapper">
-    <div class="campaign-head pt-5">
+    <!-- campaign head -->
+    <div class="campaign-head pt-3 pt-md-4">
       <div class="container">
-        <h2 class="text-uppercase fs-2 fw-bold m-0 mb-4 position-relative z-index-9">Sponsor a Student</h2>
+        <h2 class="text-uppercase fs-2 fw-bold m-0 mb-3 mt-md-4 position-relative z-index-9">Sponsor a Student</h2>
       </div>
 
       <!-- banner section -->
@@ -43,24 +44,23 @@
             <div class="row ml-0 mr-0">
 
               <!-- banner image -->
-              <div class="col-md-8 ps-0 pe-0">
+              <div class="col-lg-8 ps-0 pe-0">
                 <div class="image-holder">
                   <img src="assets/images/image_registration_2_.jpg" class="mw-100" alt="banner">
                 </div>
               </div>
 
               <!-- campaign summary -->
-              <div class="col-md-4 ps-0 pe-0">
+              <div class="col-lg-4 ps-0 pe-0">
                 <div class="main-banner-content h-100 d-flex flex-column justify-content-center text-center">
                   <div class="progress-bar">
                     <svg class="progress" data-progress="65" x="0px" y="0px" viewBox="0 0 80 80">
                       <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
                       <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
-                      <text class="text" x="50%" y="115%">HTML</text>
                     </svg>
                     <div class="data-center">
                       <div class="data-center-inner text-center">
-                        <p class="m-0 mb-2 fs-5"><span class="text-blue fw-bold">Raised</span> </p>
+                        <p class="m-0 fs-5"><span class="text-blue fw-bold text-danger">Raised</span> </p>
                         <p class="m-0 mb-2 fs-3"><span class="text-blue fw-bold">$650.00</span> </p>
                         <p class="m-0">of <span class="">$1000.00</span> Goal </p>
                       </div>
@@ -68,7 +68,7 @@
                   </div>
 
                   <div class="text-center pt-3 pb-3">
-                    <button type="button" class="btn btn-primary btn-big text-uppercase">Donate Now</button>
+                    <a href="#" class="btn btn-primary btn-big text-uppercase">Donate Now</a>
                   </div>
 
                   <div class="pb-3">
@@ -100,13 +100,16 @@
       </div>
     </div>
 
+    <!-- campaign body -->
     <div class="campaign-body main-content position-relative">
       <div class="container position-relative z-index-9">
         <div class="row">
-          <div class="col-md-8">
+          <!-- campaign details -->
+          <div class="col-lg-8">
             <div class="main-content-details pb-5">
 
-              <div class="main-content-summary bg-light" style="border-bottom: 1px solid #ddd;">
+              <!-- campaign summary (only visible on desktop) -->
+              <div class="main-content-summary bg-light d-none d-lg-block" style="border-bottom: 1px solid #ddd;">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="d-flex align-items-center">
@@ -123,33 +126,54 @@
                 </div>
               </div>
 
-              <h2 class="">Lorem ipsum dolor sit amet.</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam debitis doloribus laudantium nisi, nobis quo tenetur ut! Accusantium, consequuntur eaque eos est et ipsum molestiae necessitatibus reiciendis tempore tenetur voluptatem.</p>
+              <div class="campaign-details">
+                <h2 class="">Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam debitis doloribus laudantium nisi, nobis quo tenetur ut! Accusantium, consequuntur eaque eos est et ipsum molestiae necessitatibus reiciendis tempore tenetur voluptatem.</p>
 
-              <h2>Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque aut beatae dolorum ipsam labore maxime nulla officia qui voluptas.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, ducimus eius nostrum quibusdam quidem temporibus!</p>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque aut beatae dolorum ipsam labore maxime nulla officia qui voluptas.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, ducimus eius nostrum quibusdam quidem temporibus!</p>
 
-              <h2 class="">Lorem ipsum dolor sit amet.</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque aut beatae dolorum ipsam labore maxime nulla officia qui voluptas.</p>
-              <ul>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-              </ul>
+                <h2 class="">Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque aut beatae dolorum ipsam labore maxime nulla officia qui voluptas.</p>
+                <ul>
+                  <li>Lorem ipsum dolor sit.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+                </ul>
 
-              <h2>Lorem ipsum dolor sit.</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae debitis fugiat laborum neque quam quia reiciendis repellat temporibus velit! Asperiores autem exercitationem natus neque nihil? Alias consequuntur debitis eligendi eos error nemo nihil saepe velit voluptate? Mollitia necessitatibus, quas.</p>
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae debitis fugiat laborum neque quam quia reiciendis repellat temporibus velit! Asperiores autem exercitationem natus neque nihil? Alias consequuntur debitis eligendi eos error nemo nihil saepe velit voluptate? Mollitia necessitatibus, quas.</p>
+              </div>
+
+              <!-- campaign summary (only visible on phone) -->
+              <div class="main-content-summary bg-light d-lg-none" style="border-bottom: 1px solid #ddd;">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center">
+                      <div style="width:50px;border-top:1px solid #ddd;position: relative;top:8px;" class="me-2"></div>
+                      <p class="m-0 pt-2 pb-2">Raised <span class="text-blue fs-3 fw-bold">$650</span></p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center">
+                      <div style="width:50px;border-top:1px solid #ddd;position: relative;top:8px;" class="me-2"></div>
+                      <p class="m-0 pt-2 pb-2">Goal <span class="text-danger fs-3 fw-bold">$1000</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               <div class="pt-3 pb-3">
-                <button type="button" class="btn btn-primary btn-big text-uppercase">Donate Now</button>
+                <a href="#" class="btn btn-primary btn-big text-uppercase">Donate Now</a>
               </div>
             </div>
 
           </div>
 
-          <div class="col-md-4 bg-light">
-            <div class="sidebar ps-sm-4">
+          <!-- campaign sidebar -->
+          <div class="col-lg-4 bg-light">
+            <div class="sidebar ps-sm-4 pb-4 pb-lg-0">
               <div class="widget-box mb-3 mb-sm-5">
                 <h3 class="widget-title">Recent Donations</h3>
                 <div class="widget-body">
@@ -200,11 +224,12 @@
         </div>
       </div>
 
-      <div class="main-content-layer position-absolute top-0 start-0 end-0 bottom-0">
+      <!-- main bg layer -->
+      <div class="main-content-layer d-none d-lg-block position-absolute top-0 start-0 end-0 bottom-0">
         <div class="container-fluid h-100">
           <div class="row h-100">
-            <div class="col-md-8"></div>
-            <div class="col-md-4 bg-light"></div>
+            <div class="col-lg-8"></div>
+            <div class="col-lg-4 bg-light"></div>
           </div>
         </div>
 
@@ -216,18 +241,18 @@
   <footer class="footer">
     <div class="footer-inner pt-3 pb-3 pt-sm-4 pb-sm-4 bg-dark text-white">
       <div class="container">
-        <div class="d-sm-flex justify-content-sm-between">
-          <p class="m-0">&copy; Al-Ilm. All rights reserved, 2023</p>
+        <div class="d-md-flex justify-content-sm-between">
+          <p class="m-0 text-center text-md-start">&copy; Al-Ilm. All rights reserved, 2023</p>
 
-          <p class="m-0 text-center text-md-end text-lg-end pb-md-2 pb-lg-0"><a href="htttps://masjidsolutions.net" target="_blank"> masjidsolutions.net</a>
+          <p class="m-0 text-center text-md-end pb-md-2 pb-lg-0"><a href="htttps://masjidsolutions.net" target="_blank"> masjidsolutions.net</a>
             (317) 854 0207 </p>
         </div>
       </div>
     </div>
   </footer>
 </div>
-</body>
 
+<!-- progress animation -->
 <script>
   let forEach = function (array, callback, scope) {
     for (let i = 0; i < array.length; i++) {
@@ -237,10 +262,10 @@
   window.onload = function(){
     let max = -219.99078369140625;
     forEach(document.querySelectorAll('.progress'), function (index, value) {
-      percent = value.getAttribute('data-progress');
+      let percent = value.getAttribute('data-progress');
       value.querySelector('.fill').setAttribute('style', 'stroke-dashoffset: ' + ((100 - percent) / 100) * max);
-      // value.querySelector('.value').innerHTML = percent + '%';
     });
   }
 </script>
+</body>
 </html>

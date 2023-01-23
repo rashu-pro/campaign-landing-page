@@ -121,6 +121,9 @@ $social-icon-width: 40px;
   }
 
   &-body{
-    margin-top:$banner-space-management*2;
+    margin-top:$banner-space-management*1.6;
+    @media (min-width: 576px){
+      margin-top:$banner-space-management*2;
+    }
   }
 }

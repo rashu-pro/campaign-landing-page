@@ -6612,12 +6612,18 @@ html, body {
 
 .main-banner {
   background-color: #fff;
+  border: 1px solid #f2f2f2;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
 }
 .main-banner-wrapper {
   position: relative;
   bottom: -3.6rem;
   margin-top: -3.6rem;
+}
+.main-banner .image-holder img {
+  min-height: 100%;
+  object-fit: contain;
+  max-height: 800px;
 }
 
 .goal-inner {
@@ -6642,6 +6648,17 @@ html, body {
   width: 50%;
   height: 30%;
   background-color: #343a40;
+}
+
+.logo-credit img {
+  max-height: 40px;
+  max-width: 250px;
+}
+@media (min-width: 992px) {
+  .logo-credit img {
+    max-height: 80px;
+    max-width: 250px;
+  }
 }
 
 .img-logo-company {
@@ -6814,7 +6831,12 @@ html, body {
   color: #fff;
 }
 .campaign-body {
-  margin-top: 7.2rem;
+  margin-top: 5.76rem;
+}
+@media (min-width: 576px) {
+  .campaign-body {
+    margin-top: 7.2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

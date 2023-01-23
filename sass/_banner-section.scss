@@ -1,13 +1,21 @@
 .main{
   &-banner{
     background-color: #fff;
-    //border:1px solid #f2f2f2;
+    border:1px solid #f2f2f2;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 
     &-wrapper{
       position: relative;
       bottom:-$banner-space-management;
       margin-top:-$banner-space-management;
+    }
+
+    .image-holder{
+      img{
+        min-height: 100%;
+        object-fit: contain;
+        max-height:800px;
+      }
     }
   }
 }
@@ -38,6 +46,17 @@ $goal-radius:50%;
       width:50%;
       height:30%;
       background-color: $gray-800;
+    }
+  }
+}
+
+.logo-credit{
+  img{
+    max-height:40px;
+    max-width: 250px;
+    @media (min-width: 992px){
+      max-height:80px;
+      max-width: 250px;
     }
   }
 }
